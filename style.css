@@ -1,6 +1,5 @@
 * {
-    box-sizing: grid;
-    display: table-column;
+    box-sizing: border-box;
 }
 
 
@@ -22,17 +21,6 @@ body    {
         'lowlow'
         'bottom'
         'footer';
-        grid-template-areas:    "header"
-                                "top"
-                                "lowtop"
-                                "topmiddle"
-                                "middle"
-                                "lowmiddle"
-                                "toplow"
-                                "low"
-                                "lowlow"
-                                "bottom"
-                                "footer";
 }
 
 
@@ -40,14 +28,37 @@ body    {
     display: none;
 }
 
+@font-face {
+    font-family: "Bebas_Neue";
+    src: url(./media/fonts/Bebas_Neue/BebasNeue-Regular.ttf) format("truetype");
+}
 
+@font-face {
+    font-family: "Roboto";
+    src: url(./media/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+h1  {
+    font-size: 24px;
+    font-family: 'Bebas Neue', serif;
+}
+
+h2  {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p   {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
 
 section#header  {
     position: relative;
 }
 
 .logo   {
-    height: 30px;
+    height: 40px;
     margin: 5px 0 4px 0;
     align-items: center;
 }
@@ -61,8 +72,16 @@ section#top {
     position: relative;
 }
 
-#HeroP  {
-    
+#HeroP, #exhibP, #visitP, #event {
+    width: 100%;
+}
+
+#explore, #spec    {
+    width: 80%;
+}
+
+#cosmo, #robo, #evo, #eco, #med, #teach, #scientist, #night, #energ  {
+    width: 60%;
 }
 
 #htxt   {
@@ -81,12 +100,28 @@ section#top {
 
 
 
-#HeroP, #exhibP, #exhibD, #visitP, #cosmoD {
+#HeroP, #exhibP, #visitP {
     display: none;
 }
 
+#Hero, #exhibT, #visit, #event,  {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+h1  {
+    font-size: 28px;
+}
 
+h2  {
+    font-size: 22px;
+}
+
+p   {
+    font-size: 14px;
+}
 
 
 }
@@ -95,7 +130,29 @@ section#top {
 @media (min-width: 768px) {
     
 
+#exhibT,#cosmo  {
+    display: none;
+}
 
+#exhibD, #cosmoD    {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+    h1  {
+        font-size: 32px;
+    }
+    
+    h2  {
+        font-size: 24px;
+    }
+    
+    p   {
+        font-size: 14px;
+    }
   
 
 
