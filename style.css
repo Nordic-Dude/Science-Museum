@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px)   {
+    
+
+body    {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'top'
+        'lowtop'
+        'topmiddle'
+        'middle'
+        'lowmiddle'
+        'toplow'
+        'low'
+        'lowlow'
+        'bottom'
+        'footer';
+        min-width: 200px;
+        grid-template-areas:    "header"
+                                "top"
+                                "lowtop"
+                                "topmiddle"
+                                "middle"
+                                "lowmiddle"
+                                "toplow"
+                                "low"
+                                "lowlow"
+                                "bottom"
+                                "footer";
+}
+
+.respond    {
+    background-image: url("./media/images/herophone.jpg");
+    background-size: cover;
+}
+
+section#header  {
+    position: relative;
+}
+
+#logo   {
+    position: absolute;
+    height: 10px;
+    margin: 5px 0 4px 0;
+    align-items: center;
+}
+
+#headerdivide {
+    margin: 0%;
+
+}
+
+#Hero, #exhibT, #exhibD, #visit, #cosmoD    {
+    display: none;
+}
+
+section#top {
+    position: relative;
+}
+
+#HeroP  {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+}
+
+#htxt   {
+    position: absolute;
+}
+
+}
+
+
+
+@media (min-width: 481px) {
+    
+
+
+
+#HeroP, #exhibP, #exhibD, #visitP, #cosmoD {
+    display: none;
+}
+
+
+
+}
+
+
+@media (min-width: 768px) {
+    
+
+
+
+
+
+}
